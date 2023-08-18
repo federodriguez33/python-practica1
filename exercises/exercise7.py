@@ -2,7 +2,7 @@
 
 
 """
-A partir de ls siguiente lista instanciar una tupla que contenga todos sus valores
+A partir de las siguiente lista instanciar una tupla que contenga todos sus valores
 y en el mismo orden.
 """
 
@@ -10,19 +10,28 @@ lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
 
+tupla = lista[0],lista[1],lista[2],lista[3]
+
 # COMPLETAR - FIN
 
 assert tupla == ("casa", "perro", "pato", "gato")
 
 
 """
-A partir de ls siguiente tupla instanciar una lista que contenga todos sus valores
+A partir de las siguiente tupla instanciar una lista que contenga todos sus valores
 y en el mismo orden.
 """
 
 tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
+
+lista = []
+lista.append(tupla[0])
+lista.append(tupla[1])
+lista.append(tupla[2])
+lista.append(tupla[3])
+lista.append(tupla[4])
 
 # COMPLETAR - FIN
 
@@ -37,6 +46,8 @@ tupla = ("primer", 25, [1, 2, 3])
 
 # COMPLETAR - INICIO
 
+a,b,c = tupla[:]
+
 # COMPLETAR - FIN
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
@@ -49,6 +60,8 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
+
+total = tupla[0] + tupla[1] + tupla[2] + tupla[3] + tupla[4] + tupla[5]
 
 # COMPLETAR - FIN
 
@@ -64,6 +77,8 @@ lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
 
+string_concatenado = f'{lista[0]} {lista[1]} {lista[2]} {lista[3]} {lista[4]}'
+
 # COMPLETAR - FIN
 
 assert string_concatenado == "esta mañana sali a correr"
@@ -77,6 +92,8 @@ Restricción: Utilizar desempaquetado con comodines
 tupla = (73, 45, 344, 3434, 2)
 
 # COMPLETAR - INICIO
+
+primer,*rest = tupla
 
 # COMPLETAR - FIN
 
@@ -92,6 +109,9 @@ lista = [73, 45, 344, 3434, 2]
 
 # COMPLETAR - INICIO
 
+num1, *rest, num2 = lista
+suma = num1 + num2
+
 # COMPLETAR - FIN
 
 assert suma == 75
@@ -106,6 +126,9 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
 # COMPLETAR - INICIO
+
+primero, segundo, tercero, cuarto, quinto, *rest = tupla
+string_concatenado = f'{primero} {segundo} {tercero} {cuarto} {quinto}'
 
 # COMPLETAR - FIN
 
