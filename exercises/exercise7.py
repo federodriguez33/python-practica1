@@ -10,7 +10,8 @@ lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
 
-tupla = lista[0],lista[1],lista[2],lista[3]
+tupla = tuple(lista)
+#tupla = lista[0],lista[1],lista[2],lista[3]
 
 # COMPLETAR - FIN
 
@@ -26,12 +27,13 @@ tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
 
-lista = []
+lista = list(tupla)
+'''lista = []
 lista.append(tupla[0])
 lista.append(tupla[1])
 lista.append(tupla[2])
 lista.append(tupla[3])
-lista.append(tupla[4])
+lista.append(tupla[4])'''
 
 # COMPLETAR - FIN
 
@@ -61,7 +63,9 @@ tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
 
-total = tupla[0] + tupla[1] + tupla[2] + tupla[3] + tupla[4] + tupla[5]
+a,b,c,d,e,f = tupla
+total = a + b + c + d + e + f
+#total = tupla[0] + tupla[1] + tupla[2] + tupla[3] + tupla[4] + tupla[5]
 
 # COMPLETAR - FIN
 
@@ -77,7 +81,9 @@ lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
 
-string_concatenado = f'{lista[0]} {lista[1]} {lista[2]} {lista[3]} {lista[4]}'
+a,b,c,d,e = lista
+string_concatenado = f'{a} {b} {c} {d} {e}'
+#string_concatenado = f'{lista[0]} {lista[1]} {lista[2]} {lista[3]} {lista[4]}'
 
 # COMPLETAR - FIN
 
